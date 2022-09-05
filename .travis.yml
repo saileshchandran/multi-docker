@@ -18,7 +18,7 @@ after_success:
 
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
-  # push to docker-hub
+  # push to docker-hub missed out the multi-client repo
   - docker push saileshchandran/multi-client
   - docker push saileshchandran/multi-nginx
   - docker push saileshchandran/multi-server
